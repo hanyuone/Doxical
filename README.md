@@ -109,3 +109,11 @@ ASCII input is not supported.
     Input: 5    (The code is now "+++++[-]")
     Input: 3    (The code is now "+++++---")
     Output: -3
+    
+    [[+]-]      (You're allowed to have nested input things:
+                 the outer ones are input'd first)
+    Input: 3    (The code is now [+]-[+]-[+]-)
+    Input: 4    (The code is now ++++-[+]-[+]-)
+    Input: 2    (The code is now ++++-++-[+]-)
+    Input: 2    (The code is now ++++-++-++-)
+    Output: 14
