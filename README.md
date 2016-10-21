@@ -112,7 +112,7 @@ The ASCII operator (`a`) pops the current value as an ASCII character mod 256.
     
 ## User input:
 
-User input is represented by two chars: `[]`. First it asks for the user input, and then any code inside the brackets is multiplied by the integer input.
+User input is represented by two chars: `[]`. First it asks for the user input, and then any code inside the brackets is multiplied (or "repeated") by the integer input.
 
 ASCII input is not supported.
 
