@@ -24,10 +24,10 @@ Each operator is inserted in between 2 numbers.
     +    (The + is inserted between 1 and 2, and adds them)
     Output: 3
     
-    ++-  (Everything is eval'd left-to-right in Repetition, so this evaluates to "(1 + 2) - 3")
+    +-  (Everything is eval'd left-to-right in Repetition, so this evaluates to "(1 + 2) - 3")
     Output: 0
     
-    ***  (Evals to "(1 * 2) * 3")
+    **  (Evals to "(1 * 2) * 3")
     Output: 6
     
     +++/ (Evals to "(((1 + 2) + 3) + 4) / 5")
