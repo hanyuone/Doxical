@@ -78,6 +78,20 @@ Both of these take precedence over arithmetic operators - if there are `s`'s and
     
     Output: 735
     
+If you don't want that feature for certain `s`'s and `c`'s, there's the `|` separator, which doesn't involve the `s`'s and `c`'s after the `|` being involved with the right-hand side of the operator.
+
+### Examples:
+
+    c+sc|c    (See above, the c concats 57 and 6, the |
+               blocks the c from being included into the "sc" bit)
+    Output: 576
+    
+    c+c|sc    (The c concats 1 and 2, the second c concats 3 and 4,
+               so the program evals to: )
+               
+    12+34|sc  (The s skips 5, and the c concats "12 + 34" = 46 to 6.)
+    Output: 466
+    
 ## ASCII:
 
 The ASCII operator (`a`) pops the current value as an ASCII character mod 256.
