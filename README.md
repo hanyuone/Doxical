@@ -11,6 +11,7 @@ Features:
     - Separator for `s` & `c` (`|`)
 - Integer -> ASCII (`a`)
 - User input (`[]`)
+- While loop (`{}`)
 
 ## Arithmetic:
 
@@ -116,6 +117,8 @@ User input is represented by two chars: `[]`. First it asks for the user input, 
 
 ASCII input is not supported.
 
+## Examples:
+
     [+]
     Input: 5    (The code is now "+++++")
     Output: 21
@@ -132,3 +135,14 @@ ASCII input is not supported.
     Input: 2    (The code is now ++++-++-[+]-)
     Input: 2    (The code is now ++++-++-++-)
     Output: 14
+    
+## While loop:
+
+The while loop is represented by `{}`. Any code inside the brackets are executed until the current value is `<= 0`.
+
+### Example:
+
+    +{-}        (The code is executed like so: )
+    {-}         (The value is now 1)
+    {-}         (The value is now -1)
+    Output: -1
