@@ -8,6 +8,7 @@ Features:
 - Basic arithmetic (`+-*/`)
 - Skipping numbers (`s`)
 - Concatenation (`c`)
+    - Separator for `s` & `c` (`|`)
 - Integer -> ASCII (`a`)
 - User input (`[]`)
 
