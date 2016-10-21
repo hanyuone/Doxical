@@ -11,6 +11,8 @@ Features:
     - Separator for `s` & `c` (`|`)
 - Integer -> ASCII (`a`)
 - User input (`[]`)
+- Variables
+- Variable changing
 - While loop (`{}`)
 
 ## Arithmetic:
@@ -136,13 +138,56 @@ ASCII input is not supported.
     Input: 2    (The code is now ++++-++-++-)
     Output: 14
     
-## While loop:
+## Variable declaration and usage:
 
-The while loop is represented by `{}`. Any code inside the brackets are executed until the current value is `<= 0`.
+A variable is declared like so:
+
+    b=+    (b is now equal to 1 + 2 = 3)
+    
+You can place a variable into the main code like so:
+
+    b+++   (continuing on from last statement:
+            since b = 3, and the current number in play is 3,
+            this expression evals to "((3 + 3) + 4) + 5")
+    Output: 15
+    
+So the full code:
+
+    b=+    (You must have the var declaration on a separate line)
+    b+++
+    
+## Changing variables:
+
+You can change variables like this:
+
+    ({var}|{code})
+    
+Where `{var}` is the variable, and `{code}` is the code that changes the variable.
 
 ### Example:
 
-    +{-}        (The code is executed like so: )
-    {-}         (The value is now 1)
-    {-}         (The value is now -1)
-    Output: -1
+Let's assume that `b` is the same as above, and the number in play is `3`.
+
+    (b|++)    (b = (b + 3) + 4)
+    b
+    Output: 10
+    
+## While loop:
+
+The while loop is represented by `{}`, and is written like so:
+
+    {{var}|{code}}
+    
+Where `{var}` is the variable that is being checked, and `{code}` is the code executed.
+
+Any code inside the brackets are executed until the current variable is `<= 0`.
+
+### Example:
+
+    b=+    (b is now initiated to 3)
+    +{b|-(b|-)} (The number is now set to 3, so the value is now
+                 "3 + 4" = 7, and the while loop is exec'd like so: )
+    {b|-(b|-)}  (Because b = 3, the while loop starts. The value is now 7 - 5
+                 = 2, and b = 3 - 6 = -3)
+    The while loop stops, because b <= 0.
+    Output: 2
