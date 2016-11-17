@@ -28,7 +28,7 @@ Moving back to a grid that was already moved on is forbidden, and results in the
 
     ^v
     
-Results in the interpreter crashing, because you're moving back to a square you're already on.
+Results in illegal code, because you're moving back to a square you were already on.
 
 Doxical also has a value (henceforth called the Value) and a counter. The counter goes up by 1 every time the bot moves, and resets to 0 if the bot goes over 9. The Value is altered by moving, like so:
 
