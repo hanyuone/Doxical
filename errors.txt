@@ -1,0 +1,2 @@
+Cannot divide by 0.
+Invalid grid.
