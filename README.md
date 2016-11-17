@@ -5,9 +5,8 @@
 Doxical is an esoteric language that is based on a grid.
 
 ## Characters:
-- Explain grid
 - Directions (`^>v<`)
-- Decimal and ASCII output (`d` and `a` respectively)
+- Decimal and ASCII output (`acdp`)
 - User input (`[]`)
 - Variables
     - Alter variables (`()`)
